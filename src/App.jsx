@@ -1,4 +1,4 @@
-import Account from "./Account";
+import Account from "./components/Account/Account";
 import "./App.css";
 
 function App() {
