@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.movements__type--deposit {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+.movements__type--withdrawal {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+.operation--transfer {
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+.operation--loan {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+.operation--close {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.movements__type {
+  border-radius: 0.5rem;
+}
+
+@layer components {
+  .summary__label {
+    @apply text-lg font-medium uppercase mr-3;
+  }
+  .summary__value {
+    @apply text-2xl mr-10;
+  }
+  .operation {
+    @apply rounded-2xl px-3 py-4 text-fontColor2;
+  }
+  /* .form__input {
+    @apply w-full border-0 bg-bgColor1 font-inherit text-2xl text-center text-fontColor2 rounded-lg transition-all duration-300;
+  } */
+  .form__label {
+    @apply text-xl text-center;
+  }
+  .form__btn {
+    @apply border-0 rounded-md text-2xl w-1/2 bg-white transition-all duration-300 focus:bg-bgColor3 focus:outline-none;
+  }
+}
