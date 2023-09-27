@@ -17,11 +17,8 @@
   background-image: linear-gradient(to top left, #39b385, #9be15d);
 }
 
-.operation--close {
+.operation--withdraw {
   background-image: linear-gradient(to top left, #e52a5a, #ff585f);
-}
-.movements__type {
-  border-radius: 0.5rem;
 }
 
 @layer components {
@@ -29,7 +26,7 @@
     @apply text-lg font-medium uppercase mr-3;
   }
   .summary__value {
-    @apply text-2xl mr-10;
+    @apply text-3xl mr-10;
   }
   .operation {
     @apply rounded-2xl px-3 py-4 text-fontColor2;
