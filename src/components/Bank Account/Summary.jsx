@@ -1,7 +1,9 @@
+import { useEffect, useState } from "react";
 import { useUser } from "../../context/UserProvider";
 
-function Summary() {
+function Summary({ userData }) {
   const { fullDeposit, fullWithdraw } = useUser();
+
   return (
     <div className="summary md:flex items-baseline px-0 py-1 mt-4 md:w-full  grid grid-cols-2 ">
       <p className="summary__label ">In</p>

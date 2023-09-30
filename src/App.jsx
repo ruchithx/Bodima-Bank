@@ -1,7 +1,6 @@
-import Account from "./components/Account/Account";
 import "./App.css";
-import { UserProvider } from "./context/UserProvider";
-import UserAccount from "./components/Account/UserAccount";
+
+import UserAccount from "./components/Bank Account/UserAccount";
 
 function App() {
   return (

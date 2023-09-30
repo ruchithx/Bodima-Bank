@@ -1,8 +1,10 @@
+import { useEffect, useState } from "react";
 import { useUser } from "../../context/UserProvider";
 
 function Balance() {
   const date = new Date();
-  const { userData, fullBalance } = useUser();
+
+  const { fullBalance } = useUser();
 
   return (
     <div className="balance flex items-end justify-between">
@@ -17,7 +19,9 @@ function Balance() {
           }/${date.getFullYear()}`}</span>
         </p>
       </div>
-      <p className="balance__value md:text-7xl text-4xl font-normal">{`Rs.${fullBalance} `}</p>
+      <p
+        className={`balance__value md:text-7xl text-4xl font-normal `}
+      >{`Rs.${fullBalance} `}</p>
     </div>
   );
 }
