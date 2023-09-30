@@ -14,6 +14,9 @@ export default {
         bgColor2: "rgba(255, 255, 255, 0.6)",
         bgColor3: "rgba(255, 255, 255, 0.8)",
       },
+      spacing: {
+        128: "90vh",
+      },
 
       borderRadius: {
         rem: "10rem",

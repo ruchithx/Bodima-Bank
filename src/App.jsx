@@ -1,10 +1,11 @@
-import Account from "./components/Account/Account";
 import "./App.css";
+
+import UserAccount from "./components/Bank Account/UserAccount";
 
 function App() {
   return (
     <div className="bg-BackgroundColor">
-      <Account />
+      <UserAccount />
     </div>
   );
 }
