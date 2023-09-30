@@ -1,3 +1,6 @@
+/* eslint-disable */
+
+import { useUser } from "../../context/UserProvider";
 import Balance from "./Balance";
 import Loan from "./Loan";
 import Movements from "./Movements";
@@ -6,6 +9,7 @@ import Transfer from "./Transfer";
 import Withdraw from "./Withdraw";
 
 function Account() {
+  const { userData } = useUser();
   return (
     <div className=" container mx-auto w-10/12 mt-5  ">
       <Balance />
@@ -14,12 +18,9 @@ function Account() {
         <div className="main-1 col-span-2">
           <div className="movements bg-white rounded-xl overflow-scroll h-4/6">
             {/* Movement */}
-            <Movements />
-            <Movements />
-            <Movements />
-            <Movements />
-            <Movements />
-            <Movements />
+            {userData.movements?.map((state, i) => (
+              <Movements state={state} key={i} i={i} />
+            ))}
           </div>
           <Summary />
         </div>

@@ -1,4 +1,9 @@
+import { useUser } from "../../context/UserProvider";
+
 function Balance() {
+  const date = new Date();
+  const { userData, fullBalance } = useUser();
+
   return (
     <div className="balance flex items-end justify-between">
       <div>
@@ -6,10 +11,13 @@ function Balance() {
           Current balance
         </p>
         <p className="balance__date text-lg text-fontColor">
-          As of <span className="date">05/03/2037</span>
+          As of{" "}
+          <span className="date">{`${date.getDate()}/${
+            date.getMonth() + 1
+          }/${date.getFullYear()}`}</span>
         </p>
       </div>
-      <p className="balance__value md:text-7xl text-4xl font-normal">0000€</p>
+      <p className="balance__value md:text-7xl text-4xl font-normal">{`Rs.${fullBalance} `}</p>
     </div>
   );
 }
