@@ -1,13 +1,13 @@
 import { UserProvider } from "../../context/UserProvider";
 import Account from "./Account";
+import "./Account.css";
 
 function UserAccount() {
   return (
-    <UserProvider >
+    <UserProvider>
       <Account />
     </UserProvider>
   );
 }
 
 export default UserAccount;
-// ("lk6TX1UAIV4kAPliNZTt");
