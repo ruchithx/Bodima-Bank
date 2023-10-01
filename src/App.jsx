@@ -1,11 +1,15 @@
 import "./App.css";
 
-import UserAccount from "./components/Bank Account/UserAccount";
-
+// import UserAccount from "./components/Bank Account/UserAccount";
+import DashboardModule from "./components/Dashboard/DashboardDisplay";
+// import Account from "./components/Bank Account/UserAccount";
 function App() {
   return (
-    <div className="bg-BackgroundColor">
-      <UserAccount />
+    <div >
+      <DashboardModule />
+      
+      
+
     </div>
   );
 }

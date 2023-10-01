@@ -3,7 +3,7 @@ import { useUser } from "../../context/UserProvider";
 import { ToastContainer } from "react-toastify";
 
 function Withdraw() {
-  const { setUserData, userData, updateWithdraw, notifyError, notifySccess } =
+  const { setUserData, userData, updateWithdraw, notifyError } =
     useUser();
   const [withdraw, setWithdraw] = useState("");
 

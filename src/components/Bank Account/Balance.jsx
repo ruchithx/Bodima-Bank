@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { useUser } from "../../context/UserProvider";
 
 function Balance() {

@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import { createContext, useContext } from "react";
 import db from "./../../server/fairbase";
-import { collection, getDoc, doc, updateDoc } from "firebase/firestore";
+import { getDoc, doc, updateDoc } from "firebase/firestore";
 import { useEffect } from "react";
 import { useState } from "react";
 import { toast } from "react-toastify";

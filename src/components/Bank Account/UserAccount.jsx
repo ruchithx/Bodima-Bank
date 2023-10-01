@@ -1,11 +1,9 @@
-import { useParams } from "react-router-dom";
 import { UserProvider } from "../../context/UserProvider";
 import Account from "./Account";
 
 function UserAccount() {
-  const { id } = useParams();
   return (
-    <UserProvider id={id}>
+    <UserProvider >
       <Account />
     </UserProvider>
   );
