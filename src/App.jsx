@@ -1,3 +1,4 @@
+
 // import { Navbar } from "@material-tailwind/react";
 import Navbar from "./components/Navbar/navbar";
 import "./App.css";
@@ -12,6 +13,7 @@ function App() {
   return (
     <div>
       <Navbar2 />
+
       <UserAccount />
     </div>
   );
