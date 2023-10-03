@@ -1,12 +1,16 @@
- import styles from "../Dashboard/dashboard.module.scss";
+import styles from "../Dashboard/dashboard.module.scss";
 
-const dashboard = () => {
+const Dashboard = () => {
   return (
     <div className={styles.container}>
       <div className={styles.section1}>
         <div className={styles.item1}>
           <div className={styles.item11}>
-            <img src="/Assets/man.png" className={styles.imgman} alt="profile-image" />
+            <img
+              src="/Assets/man.png"
+              className={styles.imgman}
+              alt="profile-image"
+            />
           </div>
           <div className={styles.item12}>
             <h1>My Profile</h1>
@@ -17,7 +21,6 @@ const dashboard = () => {
             <h3>
               FUCKYOU69 <span></span>
             </h3>
-            
           </div>
         </div>
       </div>
@@ -34,32 +37,38 @@ const dashboard = () => {
           <h2>
             Have to pay : <span>6969</span>
           </h2>
-          <button className={styles.button71} role="button">More Details</button>
+          <button className={styles.button71} role="button">
+            More Details
+          </button>
         </div>
         <div className={styles.item3}>
-
-        <h1>Recent Transitions</h1>
+          <h1>Recent Transitions</h1>
           <h2>
-             <span></span>
+            <span></span>
           </h2>
           <h2>
-             <span>Deposite :</span><span>1120</span>
+            <span>Deposite :</span>
+            <span>1120</span>
           </h2>
           <h2>
-             <span>Withdraw :</span><span>1120</span>
+            <span>Withdraw :</span>
+            <span>1120</span>
           </h2>
           <h2>
-             <span>Withdraw :</span><span>1120</span>
+            <span>Withdraw :</span>
+            <span>1120</span>
           </h2>
           <h2>
-             <span>Deposite :</span><span>1120</span>
+            <span>Deposite :</span>
+            <span>1120</span>
           </h2>
-          <button className={styles.button71} role="button">More Details</button>
-
+          <button className={styles.button71} role="button">
+            More Details
+          </button>
         </div>
       </div>
     </div>
   );
 };
 
-export default dashboard;
+export default Dashboard;
