@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.image {
+  width: 100px;
+  height: 30px;
+  margin-left: 50px;
+  margin-top: 2px;
+}
+.navbar h2.name1 {
+  height: 60px;
+  margin-left: -5px;
+  font-size: 35px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar h2.name2 {
+  height: 60px;
+
+  font-size: 35px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #159dd4;
+}
+.navbtn {
+  margin-left: 830px;
+}
+.btn1 {
+  margin-left: 20px;
+  display: inline-block;
+  color: white;
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  width: 100px;
+  height: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  align-items: center;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+.btn2 {
+  margin-left: 20px;
+  display: inline-block;
+  color: white;
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  width: 100px;
+  height: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  align-items: center;
+  border-radius: 8px;
+  margin-top: 15px;
+}

@@ -1,0 +1,62 @@
+.navbar {
+  display: flex;
+  /* position: absolute;
+  z-index: 2; */
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.image {
+  width: 100px;
+  height: 30px;
+  margin-left: 50px;
+  margin-top: 2px;
+}
+.navbar h2.name1 {
+  height: 60px;
+  margin-left: -5px;
+  font-size: 35px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar h2.name2 {
+  height: 60px;
+
+  font-size: 35px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #159dd4;
+}
+.profilepic {
+  width: 50px;
+  height: 60px;
+  margin-left: 890px;
+  margin-top: 5px;
+}
+.profilename {
+  margin-top: 22px;
+  margin-left: 20px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  margin-left: 20px;
+  margin-top: 27px;
+}
+.dropdownmenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  width: 200px;
+  height: 100px;
+  /* margin-right: 200px; */
+  margin-left: -150px;
+}
+.dropdown:hover .dropdownmenu {
+  display: block;
+}
