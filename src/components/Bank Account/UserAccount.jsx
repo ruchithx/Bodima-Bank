@@ -1,9 +1,10 @@
 import { UserProvider } from "../../context/UserProvider";
+
 import Account from "./Account";
 
 function UserAccount() {
   return (
-    <UserProvider >
+    <UserProvider>
       <Account />
     </UserProvider>
   );
