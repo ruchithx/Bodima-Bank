@@ -10,7 +10,6 @@ import "react-toastify/dist/ReactToastify.css";
 const userContext = createContext();
 
 function UserProvider({ children, id }) {
-  console.log(id);
   const userQuery = doc(db, "user", "lk6TX1UAIV4kAPliNZTt");
   const [userData, setUserData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
