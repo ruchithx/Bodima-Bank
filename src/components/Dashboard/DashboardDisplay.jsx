@@ -7,6 +7,7 @@ const Dashboard = () => {
   const [image, setImage] = useState(Imgg);
   const [isEditorOpen, setIsEditorOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
+  const[isSaved,setIsSaved]=useState(false);
   const [editedName, setEditedName] = useState("Manusha Dananjaya");
 
   const handleImageChange = (croppedImage) => {
@@ -29,11 +30,14 @@ const Dashboard = () => {
 
   const handleEditClick = () => {
     setIsEditing(true);
+    setIsSaved(false);
   };
 
   const handleSaveClick = () => {
     // Handle saving the edited name and profile picture here
     // For now, we'll just update the state
+    setIsSaved(true);
+
     setIsEditing(false);
   };
 
@@ -57,13 +61,22 @@ const Dashboard = () => {
       <div className={styles.section2}>
         <div className={styles.item2}>
           <h1>Account Settings</h1>
+          {isSaved ?(
+            <h3>Saved Successfully!</h3>
+
+
+          ):(<></>)}
+
           {isEditing ? (
-              <input
+              
+              <h2>Name :<span><input
                 type="text"
+                placeholder="Enter your name"
                 className={styles.name}
-                value={editedName}
+                
                 onChange={(e) => setEditedName(e.target.value)}
               />
+              </span></h2>
             ) : (
               <>
                 
@@ -71,7 +84,7 @@ const Dashboard = () => {
             )}
           {isEditing ? (
             <h2>
-              Change Pic : <button onClick={handleChooseImage}>Choose Image</button>
+              Change Pic : <button className={styles.button15} onClick={handleChooseImage}>Choose Image</button>
               <input
                 type="file"
                 id="file-input"
